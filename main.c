@@ -36,11 +36,16 @@ void genSeq(int tailleSeq, int tailleMotif)
 	int i;
 	if (tailleMotif<tailleSeq)
 	{
-		for (i = 0; i < tailleSeq; ++i)
+		int j = chanceMotif();
+		if(j!=2)
 		{
-			Seq[i]=genBases();
-			printf("%c", Seq[i]);
+			for (i = 0; i < tailleSeq; ++i)
+			{
+				Seq[i]=genBases();
+				printf("%c", Seq[i]);
+			}
 		}
+		
 	}
 	else
 	{
