@@ -1,0 +1,22 @@
+Motif : atcg
+
+Seq 1
+Position(s) : 1 29 35 
+Occurence(s) : 3
+
+Seq 2
+Position(s) : 13 18 22 31 46 
+Occurence(s) : 5
+
+Seq 3
+Position(s) : 6 40 
+Occurence(s) : 2
+
+Seq 4
+Position(s) : 5 18 42 
+Occurence(s) : 3
+
+Seq 5
+Position(s) : 13 26 45 
+Occurence(s) : 3
+

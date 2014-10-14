@@ -1,0 +1,10 @@
+>seq1
+atcggtagagtatgaagtgggtttgaatatcgtaatcggagtggtgatgt
+>seq2
+gattaggtatggatcgtatcgatcgttttgatcgtatatttggatatcga
+>seq3
+tggatatcgtggttgaataaatgatgttttatagatggtatcgaaaaagg
+>seq4
+ggtaatcggaatggagtatcgggggtttatagattgtggtgatcgaagag
+>seq5
+gtggaaataggtatcgtattgtgggatcgttaagttattaaagtatcgtg
