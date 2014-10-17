@@ -1,22 +1,502 @@
 Motif : atcg
 
 Seq 1
-Position(s) : 1 29 35 
-Occurence(s) : 3
-
-Seq 2
-Position(s) : 13 18 22 31 46 
-Occurence(s) : 5
-
-Seq 3
-Position(s) : 6 40 
+Taille : 120
+Position(s) : 12 76 
 Occurence(s) : 2
 
+Seq 2
+Taille : 250
+Position(s) : 19 31 66 88 213 227 246 
+Occurence(s) : 7
+
+Seq 3
+Taille : 82
+Position(s) : 78 
+Occurence(s) : 1
+
 Seq 4
-Position(s) : 5 18 42 
+Taille : 125
+Position(s) : 3 18 87 
 Occurence(s) : 3
 
 Seq 5
-Position(s) : 13 26 45 
+Taille : 166
+Position(s) : 31 54 65 109 148 
+Occurence(s) : 5
+
+Seq 6
+Taille : 45
+Position(s) : 2 8 33 39 
+Occurence(s) : 4
+
+Seq 7
+Taille : 177
+Position(s) : 7 18 39 44 54 84 146 171 
+Occurence(s) : 8
+
+Seq 8
+Taille : 232
+Position(s) : 40 46 54 
 Occurence(s) : 3
+
+Seq 9
+Taille : 233
+Position(s) : 29 47 81 98 130 134 184 
+Occurence(s) : 7
+
+Seq 10
+Taille : 35
+Position(s) : 
+Occurence(s) : 0
+
+Seq 11
+Taille : 163
+Position(s) : 19 28 64 123 
+Occurence(s) : 4
+
+Seq 12
+Taille : 232
+Position(s) : 26 59 89 118 130 169 
+Occurence(s) : 6
+
+Seq 13
+Taille : 34
+Position(s) : 6 
+Occurence(s) : 1
+
+Seq 14
+Taille : 60
+Position(s) : 19 30 
+Occurence(s) : 2
+
+Seq 15
+Taille : 191
+Position(s) : 13 35 103 108 131 136 183 
+Occurence(s) : 7
+
+Seq 16
+Taille : 150
+Position(s) : 100 116 128 141 
+Occurence(s) : 4
+
+Seq 17
+Taille : 74
+Position(s) : 31 46 54 
+Occurence(s) : 3
+
+Seq 18
+Taille : 177
+Position(s) : 165 
+Occurence(s) : 1
+
+Seq 19
+Taille : 181
+Position(s) : 3 19 85 
+Occurence(s) : 3
+
+Seq 20
+Taille : 167
+Position(s) : 5 154 
+Occurence(s) : 2
+
+Seq 21
+Taille : 163
+Position(s) : 49 64 74 88 139 
+Occurence(s) : 5
+
+Seq 22
+Taille : 255
+Position(s) : 13 21 50 135 141 152 167 180 216 
+Occurence(s) : 9
+
+Seq 23
+Taille : 75
+Position(s) : 6 
+Occurence(s) : 1
+
+Seq 24
+Taille : 245
+Position(s) : 17 37 70 129 
+Occurence(s) : 4
+
+Seq 25
+Taille : 258
+Position(s) : 20 26 45 73 133 154 206 230 
+Occurence(s) : 8
+
+Seq 26
+Taille : 162
+Position(s) : 62 72 87 
+Occurence(s) : 3
+
+Seq 27
+Taille : 240
+Position(s) : 32 69 88 151 197 229 
+Occurence(s) : 6
+
+Seq 28
+Taille : 49
+Position(s) : 22 
+Occurence(s) : 1
+
+Seq 29
+Taille : 203
+Position(s) : 88 
+Occurence(s) : 1
+
+Seq 30
+Taille : 205
+Position(s) : 14 31 100 104 118 128 139 165 
+Occurence(s) : 8
+
+Seq 31
+Taille : 99
+Position(s) : 
+Occurence(s) : 0
+
+Seq 32
+Taille : 207
+Position(s) : 42 63 96 
+Occurence(s) : 3
+
+Seq 33
+Taille : 209
+Position(s) : 10 69 112 127 131 149 197 
+Occurence(s) : 7
+
+Seq 34
+Taille : 45
+Position(s) : 39 
+Occurence(s) : 1
+
+Seq 35
+Taille : 134
+Position(s) : 33 56 66 77 94 
+Occurence(s) : 5
+
+Seq 36
+Taille : 86
+Position(s) : 12 
+Occurence(s) : 1
+
+Seq 37
+Taille : 157
+Position(s) : 10 22 52 68 134 144 
+Occurence(s) : 6
+
+Seq 38
+Taille : 188
+Position(s) : 19 82 164 
+Occurence(s) : 3
+
+Seq 39
+Taille : 135
+Position(s) : 17 65 95 128 
+Occurence(s) : 4
+
+Seq 40
+Taille : 49
+Position(s) : 
+Occurence(s) : 0
+
+Seq 41
+Taille : 27
+Position(s) : 
+Occurence(s) : 0
+
+Seq 42
+Taille : 171
+Position(s) : 45 78 88 141 161 
+Occurence(s) : 5
+
+Seq 43
+Taille : 141
+Position(s) : 19 32 98 102 
+Occurence(s) : 4
+
+Seq 44
+Taille : 120
+Position(s) : 8 12 
+Occurence(s) : 2
+
+Seq 45
+Taille : 44
+Position(s) : 6 28 
+Occurence(s) : 2
+
+Seq 46
+Taille : 42
+Position(s) : 
+Occurence(s) : 0
+
+Seq 47
+Taille : 69
+Position(s) : 
+Occurence(s) : 0
+
+Seq 48
+Taille : 214
+Position(s) : 69 82 189 
+Occurence(s) : 3
+
+Seq 49
+Taille : 170
+Position(s) : 11 23 30 113 130 141 145 
+Occurence(s) : 7
+
+Seq 50
+Taille : 183
+Position(s) : 6 24 58 127 154 162 177 
+Occurence(s) : 7
+
+Seq 51
+Taille : 155
+Position(s) : 50 64 75 90 115 
+Occurence(s) : 5
+
+Seq 52
+Taille : 41
+Position(s) : 
+Occurence(s) : 0
+
+Seq 53
+Taille : 174
+Position(s) : 6 31 48 55 73 126 135 139 143 165 
+Occurence(s) : 10
+
+Seq 54
+Taille : 238
+Position(s) : 182 
+Occurence(s) : 1
+
+Seq 55
+Taille : 60
+Position(s) : 26 
+Occurence(s) : 1
+
+Seq 56
+Taille : 200
+Position(s) : 6 13 46 102 121 172 181 
+Occurence(s) : 7
+
+Seq 57
+Taille : 99
+Position(s) : 36 44 55 
+Occurence(s) : 3
+
+Seq 58
+Taille : 77
+Position(s) : 19 39 60 64 
+Occurence(s) : 4
+
+Seq 59
+Taille : 22
+Position(s) : 
+Occurence(s) : 0
+
+Seq 60
+Taille : 172
+Position(s) : 7 81 90 137 145 
+Occurence(s) : 5
+
+Seq 61
+Taille : 225
+Position(s) : 17 60 112 132 184 211 
+Occurence(s) : 6
+
+Seq 62
+Taille : 35
+Position(s) : 19 
+Occurence(s) : 1
+
+Seq 63
+Taille : 256
+Position(s) : 22 40 74 208 231 
+Occurence(s) : 5
+
+Seq 64
+Taille : 43
+Position(s) : 10 14 26 
+Occurence(s) : 3
+
+Seq 65
+Taille : 110
+Position(s) : 28 42 52 61 92 
+Occurence(s) : 5
+
+Seq 66
+Taille : 67
+Position(s) : 58 
+Occurence(s) : 1
+
+Seq 67
+Taille : 238
+Position(s) : 19 53 70 83 107 131 156 178 196 225 
+Occurence(s) : 10
+
+Seq 68
+Taille : 189
+Position(s) : 5 60 85 126 
+Occurence(s) : 4
+
+Seq 69
+Taille : 256
+Position(s) : 76 118 218 224 
+Occurence(s) : 4
+
+Seq 70
+Taille : 176
+Position(s) : 52 63 
+Occurence(s) : 2
+
+Seq 71
+Taille : 122
+Position(s) : 24 62 
+Occurence(s) : 2
+
+Seq 72
+Taille : 154
+Position(s) : 92 111 139 
+Occurence(s) : 3
+
+Seq 73
+Taille : 154
+Position(s) : 37 83 89 100 120 
+Occurence(s) : 5
+
+Seq 74
+Taille : 128
+Position(s) : 17 40 49 79 123 
+Occurence(s) : 5
+
+Seq 75
+Taille : 115
+Position(s) : 36 71 
+Occurence(s) : 2
+
+Seq 76
+Taille : 71
+Position(s) : 4 16 53 
+Occurence(s) : 3
+
+Seq 77
+Taille : 75
+Position(s) : 5 13 31 53 64 
+Occurence(s) : 5
+
+Seq 78
+Taille : 196
+Position(s) : 4 57 112 181 
+Occurence(s) : 4
+
+Seq 79
+Taille : 101
+Position(s) : 47 94 
+Occurence(s) : 2
+
+Seq 80
+Taille : 195
+Position(s) : 6 15 57 101 152 166 180 188 
+Occurence(s) : 8
+
+Seq 81
+Taille : 185
+Position(s) : 27 31 52 73 110 145 
+Occurence(s) : 6
+
+Seq 82
+Taille : 94
+Position(s) : 6 23 35 
+Occurence(s) : 3
+
+Seq 83
+Taille : 123
+Position(s) : 64 
+Occurence(s) : 1
+
+Seq 84
+Taille : 210
+Position(s) : 4 43 94 188 206 
+Occurence(s) : 5
+
+Seq 85
+Taille : 96
+Position(s) : 3 32 41 91 
+Occurence(s) : 4
+
+Seq 86
+Taille : 16
+Position(s) : 
+Occurence(s) : 0
+
+Seq 87
+Taille : 234
+Position(s) : 20 24 165 191 
+Occurence(s) : 4
+
+Seq 88
+Taille : 184
+Position(s) : 2 41 54 70 103 131 141 160 
+Occurence(s) : 8
+
+Seq 89
+Taille : 71
+Position(s) : 13 61 67 
+Occurence(s) : 3
+
+Seq 90
+Taille : 101
+Position(s) : 19 40 76 
+Occurence(s) : 3
+
+Seq 91
+Taille : 249
+Position(s) : 20 73 207 
+Occurence(s) : 3
+
+Seq 92
+Taille : 74
+Position(s) : 
+Occurence(s) : 0
+
+Seq 93
+Taille : 192
+Position(s) : 13 97 129 140 
+Occurence(s) : 4
+
+Seq 94
+Taille : 85
+Position(s) : 41 45 67 
+Occurence(s) : 3
+
+Seq 95
+Taille : 228
+Position(s) : 39 91 146 
+Occurence(s) : 3
+
+Seq 96
+Taille : 69
+Position(s) : 4 21 59 
+Occurence(s) : 3
+
+Seq 97
+Taille : 175
+Position(s) : 7 27 65 125 141 170 
+Occurence(s) : 6
+
+Seq 98
+Taille : 47
+Position(s) : 3 23 
+Occurence(s) : 2
+
+Seq 99
+Taille : 141
+Position(s) : 
+Occurence(s) : 0
+
+Seq 100
+Taille : 136
+Position(s) : 72 
+Occurence(s) : 1
 

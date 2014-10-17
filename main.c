@@ -25,7 +25,7 @@ char genBases() //Génération aléatoire de bases
 int chanceMotif() //Pourcentage d'apparition du motif dans la séquence
 {
 	int Random= rand() % 100;
-	if (Random>5) 
+	if (Random>2) 
 	{
 		return 0;
 	}
@@ -37,7 +37,7 @@ int chanceMotif() //Pourcentage d'apparition du motif dans la séquence
 
 //************************************************************************
 
-void genSeq(int tailleSeq, int tailleMotif, char motif[], FILE* fichier, FILE* fichier2)
+void genSeq(int tailleSeq, int tailleMotif, char motif[], FILE* Seqfile, FILE* Fastafile)
 {
 	char* Seq = (char*)malloc(sizeof(char) * tailleSeq);
 	int i=0;
@@ -46,20 +46,20 @@ void genSeq(int tailleSeq, int tailleMotif, char motif[], FILE* fichier, FILE* f
 
 	
 
-	fprintf(fichier, "Position(s) : ");
+	fprintf(Seqfile, "Position(s) : ");
 
 	if (tailleMotif<=tailleSeq)
 	{
 		while(i < tailleSeq)
 		{
 			int j = chanceMotif();
-			if(j==1 && ((tailleSeq-i) > tailleMotif))
+			if(j && ((tailleSeq-i) > tailleMotif))
 			{
 				strncat(Seq,motif,tailleMotif);
 				pos=i+1;
 				i=i+tailleMotif;
 				occ = occ +1;
-				fprintf(fichier,"%i ",pos );
+				fprintf(Seqfile,"%i ",pos );
 			}
 			else
 			{
@@ -68,8 +68,9 @@ void genSeq(int tailleSeq, int tailleMotif, char motif[], FILE* fichier, FILE* f
 			}
 			
 		}
-		fprintf(fichier2,"%s\n",Seq );
-		fprintf(fichier, "\nOccurence(s) : %i\n\n", occ);
+		Seq[i]='\0';
+		fprintf(Fastafile,"%s\n",Seq );
+		fprintf(Seqfile, "\nOccurence(s) : %i\n\n", occ);
 	}
 	else
 	{
@@ -84,27 +85,19 @@ int main(int argc, char const *argv[])
 	srand(time(NULL));
 
 	int tailleUtil,i;
-	int choixTaille = 0;
 	char taille[BUFFERMAX];
-	printf("Quelle taille pour la séquence ?\n");
-	do
-	{
-		printf(">");
-		fgets(taille,BUFFERMAX,stdin);
-		choixTaille = atoi(taille);
-	} while(choixTaille ==0);
-
-	printf("Taille définie : %i\n",choixTaille );
+	
+	//printf("Taille définie : %i\n",choixTaille );
 	char motif[] = "atcg";
 	int tailleMotif=strlen(motif);
 	printf("tailleMotif : %i\n",tailleMotif );
 
-	FILE* fichier = NULL;
-	FILE* fichier2 = NULL;
+	FILE* Seqfile = NULL;
+	FILE* Fastafile = NULL;
 
-	fichier = fopen("test.txt","w");
-	fprintf(fichier, "Motif : %s\n\n",motif);
-	fichier2 = fopen("fasta.txt","w");
+	Seqfile = fopen("test.txt","w");
+	fprintf(Seqfile, "Motif : %s\n\n",motif);
+	Fastafile = fopen("fasta.txt","w");
 
 	char nombreSeq[BUFFERMAX];
 	int choixSeq=0 ;
@@ -119,15 +112,15 @@ int main(int argc, char const *argv[])
 
 	for (i = 0; i < choixSeq; ++i)
 	{
-		fprintf(fichier, "Seq %i\n", i+1);
-		fprintf(fichier2, ">seq%i\n", i+1);
-		genSeq(choixTaille,tailleMotif,motif,fichier,fichier2);
+		fprintf(Seqfile, "Seq %i\n", i+1);
+		fprintf(Fastafile, ">seq%i\n", i+1);
+		int choixTaille= rand()%250+10;
+		fprintf(Seqfile, "Taille : %i\n", choixTaille);
+		genSeq(choixTaille,tailleMotif,motif,Seqfile,Fastafile);
 	}
 	
 
-	fclose(fichier);
-
-	//printf("\nLe motif vaut %s\n", motif);
+	fclose(Seqfile);
 
 	return 0;
 }
