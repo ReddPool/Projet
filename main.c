@@ -22,10 +22,20 @@ char genBases() //Génération aléatoire de bases
 
 //***********************************************************************
 
-void LireChaine(char chaine[], int size)
+void LireChaine(char chaine[], int size) //Permet de lire une chaine de caractère rentrée par l'utilisateur
 {
 	fgets(chaine,size,stdin);
 	chaine[strlen(chaine)-1] = '\0';
+}
+
+//***************************************************
+
+int LireNombreEntier() //Permet de lire un nombre entier
+{
+	char chaine[64];
+	fgets(chaine,64,stdin);
+
+	return atoi(chaine);
 }
 
 //***********************************************************************
@@ -87,6 +97,7 @@ void genSeq(int tailleSeq, int tailleMotif, char motif[], FILE* Seqfile, FILE* F
 }
 
 //***********************************************************************
+//***********************************************************************
 
 int main(int argc, char const *argv[])
 {
@@ -95,17 +106,20 @@ int main(int argc, char const *argv[])
 	int tailleUtil,i;
 	char taille[BUFFERMAX];
 	
-	//printf("Taille définie : %i\n",choixTaille );
-	char motif[150] ;
-	char nom[20];
+	char motif[150] ; //Motif entré par l'utilisateur
+	char nom[20]; //Nom du fichier que l'utilisateur veut générer
 	char filename[20];
 	char fastaname[20];
+	int subst = 0 ; //Nombre de substitutions max
 
-	printf("Nom du fichier à générer :");
+	printf("Nom du fichier à générer :\n");
 	LireChaine(nom,20);
-	printf("Motif :");
+	printf("Motif :\n");
 	LireChaine(motif,150);
 	int tailleMotif=strlen(motif);
+	printf("Nombre de substitutions autorisées : \n");
+	subst = LireNombreEntier();
+
 	printf("tailleMotif : %i\n",tailleMotif );
 
 	FILE* Seqfile = NULL;
