@@ -22,6 +22,14 @@ char genBases() //Génération aléatoire de bases
 
 //***********************************************************************
 
+void LireChaine(char chaine[], int size)
+{
+	fgets(chaine,size,stdin);
+	chaine[strlen(chaine)-1] = '\0';
+}
+
+//***********************************************************************
+
 int chanceMotif() //Pourcentage d'apparition du motif dans la séquence
 {
 	int Random= rand() % 100;
@@ -88,16 +96,26 @@ int main(int argc, char const *argv[])
 	char taille[BUFFERMAX];
 	
 	//printf("Taille définie : %i\n",choixTaille );
-	char motif[] = "atcg";
+	char motif[150] ;
+	char nom[20];
+	char filename[20];
+	char fastaname[20];
+
+	printf("Nom du fichier à générer :");
+	LireChaine(nom,20);
+	printf("Motif :");
+	LireChaine(motif,150);
 	int tailleMotif=strlen(motif);
 	printf("tailleMotif : %i\n",tailleMotif );
 
 	FILE* Seqfile = NULL;
 	FILE* Fastafile = NULL;
 
-	Seqfile = fopen("test.txt","w");
+	sprintf(filename,"%s.txt",nom);
+	Seqfile = fopen(filename,"w");
+	sprintf(fastaname,"%s.fasta",nom);
 	fprintf(Seqfile, "Motif : %s\n\n",motif);
-	Fastafile = fopen("fasta.txt","w");
+	Fastafile = fopen(fastaname,"w");
 
 	char nombreSeq[BUFFERMAX];
 	int choixSeq=0 ;
