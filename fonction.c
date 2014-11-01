@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 
-//#define BUFFERMAX 50
+#include "fonction.h"
 
 char genBases() //Génération aléatoire de bases
 {
@@ -53,12 +53,10 @@ int chanceMotif() //Pourcentage d'apparition du motif dans la séquence
 	}
 }
 
-//*****************************************************************
-
 int chanceSubst() //Pourcentage de chance de substitution
 {
 	int Random= rand() % 100;
-	if (Random>10) 
+	if (Random>50) 
 	{
 		return 0;
 	}
@@ -70,7 +68,7 @@ int chanceSubst() //Pourcentage de chance de substitution
 
 //************************************************
 
-char* substMotif(char motif[], FILE* Seqfile)
+char* substMotif(char motif[], FILE* Seqfile) //Substitution dans le motif
 {
 	char motif2[strlen(motif)];
 	strcpy(motif2,motif);
@@ -83,8 +81,8 @@ char* substMotif(char motif[], FILE* Seqfile)
 		nuc[0]=motif2[i];
 		if (j && (subst[0] != nuc[0]) )
 		{
-			fprintf(Seqfile, "\n\tSubstitution du nucléotide numéro %i (%c) en %c",i+1, motif2[i],subst[0] );
-			//printf("Substitution de %c en %c\n",motif2[i],subst[0] );
+			fprintf(Seqfile, "\nSubstitution de %c en %c", motif2[i],subst[0] );
+			printf("Substitution de %c en %c\n",motif2[i],subst[0] );
 			motif2[i]=subst[0];
 			//printf("%s\n",motif2);
 		}
@@ -125,14 +123,14 @@ void genSeq(int tailleSeq, int tailleMotif, int subst, char motif[], FILE* Seqfi
 					strcpy(motif2,substMotif(motif,Seqfile));
 					strncat(Seq,motif2,tailleMotif);
 					substmotif++;
-					//printf("%s\n", motif);
+					printf("%s\n", motif);
 					i=i+tailleMotif;
 					occ = occ +1;	
 				}
 				else
 				{
 					strncat(Seq,motif,tailleMotif);
-					//printf("%s\n", motif);
+					printf("%s\n", motif);
 					i=i+tailleMotif;
 					occ = occ +1;
 				}
@@ -158,59 +156,3 @@ void genSeq(int tailleSeq, int tailleMotif, int subst, char motif[], FILE* Seqfi
 //***********************************************************************
 //***********************************************************************
 
-int main(int argc, char const *argv[])
-{
-	srand(time(NULL));
-
-	int tailleUtil,i;
-	//char taille[BUFFERMAX];
-	
-	char motif[150] ; //Motif entré par l'utilisateur
-	char nom[20]; //Nom du fichier que l'utilisateur veut générer
-	char filename[20];
-	char fastaname[20];
-	int subst = 0 ; //Nombre de substitutions max
-
-	printf("Nom du fichier à générer :\n");
-	LireChaine(nom,20);
-	printf("Motif :\n");
-	LireChaine(motif,150);
-	int tailleMotif=strlen(motif);
-	printf("tailleMotif : %i\n",tailleMotif );
-	printf("Nombre de substitutions autorisées : \n");
-	subst = LireNombreEntier();
-
-
-	FILE* Seqfile = NULL;
-	FILE* Fastafile = NULL;
-
-	sprintf(filename,"%s.txt",nom);
-	Seqfile = fopen(filename,"w");
-	sprintf(fastaname,"%s.fasta",nom);
-	fprintf(Seqfile, "Motif : %s\n\n",motif);
-	Fastafile = fopen(fastaname,"w");
-
-	//char nombreSeq[BUFFERMAX];
-	int choixSeq=0 ;
-	printf("Combien de séquences voulez vous générer ?\n");
-	do 
-	{
-		printf(">");
-		choixSeq = LireNombreEntier();
-	} while(choixSeq == 0);
-	
-
-	for (i = 0; i < choixSeq; ++i)
-	{
-		fprintf(Seqfile, "Seq %i\n", i+1);
-		fprintf(Fastafile, ">seq%i\n", i+1);
-		int choixTaille= rand()%250+10;
-		fprintf(Seqfile, "Taille : %i\n", choixTaille);
-		genSeq(choixTaille,tailleMotif,subst,motif,Seqfile,Fastafile);
-	}
-	
-
-	fclose(Seqfile);
-
-	return 0;
-}
