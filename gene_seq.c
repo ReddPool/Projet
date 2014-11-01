@@ -4,14 +4,14 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "fonction.h"
+#include "fonction_gene_seq.h"
 
 int main(int argc, char const *argv[])
 {
 	srand(time(NULL));
 
 	int tailleUtil,i;
-	char taille[BUFFERMAX];
+	//char taille[BUFFERMAX];
 	
 	char motif[150] ; //Motif entré par l'utilisateur
 	char nom[20]; //Nom du fichier que l'utilisateur veut générer
@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
 	fprintf(Seqfile, "Motif : %s\n\n",motif);
 	Fastafile = fopen(fastaname,"w");
 
-	char nombreSeq[BUFFERMAX];
+	//char nombreSeq[BUFFERMAX];
 	int choixSeq=0 ;
 	printf("Combien de séquences voulez vous générer ?\n");
 	do 

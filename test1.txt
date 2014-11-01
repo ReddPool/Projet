@@ -1,389 +1,287 @@
-Motif : atgc
+Motif : atgcatgcatgcatgc
 
 Seq 1
-Taille : 71
+Taille : 70
 Position(s) : 
-1 
-62 
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 3 (g) en t
-	Substitution du nucléotide numéro 4 (c) en g
-Occurence(s) : 2
+40 
+	Substitution du nucléotide numéro 2 (t) en g
+	Substitution du nucléotide numéro 4 (c) en t
+Occurence(s) : 1
 
 Seq 2
-Taille : 156
-Position(s) : 
-3 
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 3 (g) en a
-112 
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 4 (c) en t
-Occurence(s) : 2
-
-Seq 3
-Taille : 243
-Position(s) : 
-27 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 2 (t) en a
-38 
-42 
-86 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 3 (g) en t
-	Substitution du nucléotide numéro 4 (c) en a
-163 
-199 
-Occurence(s) : 6
-
-Seq 4
-Taille : 211
-Position(s) : 
-47 
-	Substitution du nucléotide numéro 3 (g) en t
-74 
-78 
-82 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 3 (g) en t
-155 
-192 
-Occurence(s) : 6
-
-Seq 5
-Taille : 155
-Position(s) : 
-1 
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 3 (g) en t
-	Substitution du nucléotide numéro 4 (c) en a
-26 
-56 
-128 
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 3 (g) en a
-Occurence(s) : 4
-
-Seq 6
-Taille : 17
-Position(s) : 
-2 
-Occurence(s) : 1
-
-Seq 7
-Taille : 116
-Position(s) : 
-Occurence(s) : 0
-
-Seq 8
-Taille : 132
+Taille : 172
 Position(s) : 
 9 
-Occurence(s) : 1
-
-Seq 9
-Taille : 131
-Position(s) : 
-29 
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 4 (c) en a
-39 
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 4 (c) en g
-63 
-	Substitution du nucléotide numéro 4 (c) en a
-103 
-107 
-121 
-Occurence(s) : 6
-
-Seq 10
-Taille : 207
-Position(s) : 
-65 
-82 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 4 (c) en a
-95 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 3 (g) en t
-	Substitution du nucléotide numéro 4 (c) en g
-158 
-170 
-	Substitution du nucléotide numéro 4 (c) en t
-184 
-200 
-Occurence(s) : 7
-
-Seq 11
-Taille : 159
-Position(s) : 
-8 
-59 
-	Substitution du nucléotide numéro 4 (c) en t
-134 
-143 
-155 
-Occurence(s) : 5
-
-Seq 12
-Taille : 129
-Position(s) : 
-34 
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en t
-70 
-115 
+26 
+	Substitution du nucléotide numéro 6 (t) en a
+	Substitution du nucléotide numéro 8 (c) en t
+66 
 Occurence(s) : 3
 
-Seq 13
-Taille : 156
+Seq 3
+Taille : 185
 Position(s) : 
-24 
-	Substitution du nucléotide numéro 1 (a) en t
-32 
-50 
-	Substitution du nucléotide numéro 4 (c) en g
-58 
-127 
-	Substitution du nucléotide numéro 3 (g) en t
-	Substitution du nucléotide numéro 4 (c) en t
-Occurence(s) : 5
-
-Seq 14
-Taille : 131
-Position(s) : 
-11 
-15 
-33 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 4 (c) en a
-45 
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 4 (c) en g
-82 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 4 (c) en g
-87 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 4 (c) en g
-Occurence(s) : 6
-
-Seq 15
-Taille : 13
-Position(s) : 
-Occurence(s) : 0
-
-Seq 16
-Taille : 29
-Position(s) : 
-19 
-Occurence(s) : 1
-
-Seq 17
-Taille : 169
-Position(s) : 
-20 
-	Substitution du nucléotide numéro 3 (g) en a
-45 
-86 
-113 
-	Substitution du nucléotide numéro 1 (a) en g
-133 
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 3 (g) en a
-143 
-Occurence(s) : 6
-
-Seq 18
-Taille : 14
-Position(s) : 
-Occurence(s) : 0
-
-Seq 19
-Taille : 179
-Position(s) : 
-28 
-	Substitution du nucléotide numéro 4 (c) en t
-169 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 4 (c) en a
+10 
+37 
 Occurence(s) : 2
 
-Seq 20
-Taille : 211
+Seq 4
+Taille : 235
 Position(s) : 
 4 
 	Substitution du nucléotide numéro 3 (g) en a
-9 
-	Substitution du nucléotide numéro 3 (g) en a
 	Substitution du nucléotide numéro 4 (c) en a
-13 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en a
-27 
-42 
+32 
+87 
+	Substitution du nucléotide numéro 3 (g) en t
+	Substitution du nucléotide numéro 10 (t) en a
+123 
+	Substitution du nucléotide numéro 2 (t) en a
+	Substitution du nucléotide numéro 4 (c) en t
+139 
+163 
+	Substitution du nucléotide numéro 2 (t) en g
+	Substitution du nucléotide numéro 3 (g) en t
+180 
+Occurence(s) : 7
+
+Seq 5
+Taille : 137
+Position(s) : 
+2 
 	Substitution du nucléotide numéro 1 (a) en g
 	Substitution du nucléotide numéro 4 (c) en t
-50 
-77 
-183 
-191 
-	Substitution du nucléotide numéro 2 (t) en a
-198 
-206 
-	Substitution du nucléotide numéro 3 (g) en t
-Occurence(s) : 11
-
-Seq 21
-Taille : 180
-Position(s) : 
-62 
-	Substitution du nucléotide numéro 3 (g) en a
-86 
-119 
-172 
+37 
+	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 4 (c) en g
+91 
+117 
 Occurence(s) : 4
 
-Seq 22
-Taille : 107
+Seq 6
+Taille : 101
 Position(s) : 
-69 
-102 
-	Substitution du nucléotide numéro 1 (a) en t
-Occurence(s) : 2
-
-Seq 23
-Taille : 212
-Position(s) : 
-53 
-184 
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en a
-Occurence(s) : 2
-
-Seq 24
-Taille : 146
-Position(s) : 
-14 
-	Substitution du nucléotide numéro 4 (c) en t
-24 
-	Substitution du nucléotide numéro 2 (t) en g
-31 
 46 
-59 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 3 (g) en t
-	Substitution du nucléotide numéro 4 (c) en a
-81 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 4 (c) en g
-108 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 2 (t) en g
-Occurence(s) : 7
-
-Seq 25
-Taille : 72
-Position(s) : 
-53 
 Occurence(s) : 1
 
-Seq 26
+Seq 7
 Taille : 200
 Position(s) : 
-77 
-86 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en g
-131 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 2 (t) en a
-177 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 4 (c) en g
-185 
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en a
-Occurence(s) : 5
+37 
+96 
+130 
+158 
+Occurence(s) : 4
 
-Seq 27
-Taille : 191
+Seq 8
+Taille : 14
+Position(s) : Seq 9
+Taille : 47
 Position(s) : 
-3 
-13 
-	Substitution du nucléotide numéro 2 (t) en a
+Occurence(s) : 0
+
+Seq 10
+Taille : 238
+Position(s) : 
+33 
+59 
+83 
+107 
 	Substitution du nucléotide numéro 3 (g) en t
-	Substitution du nucléotide numéro 4 (c) en a
-80 
-118 
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en t
-131 
-160 
 	Substitution du nucléotide numéro 4 (c) en g
-Occurence(s) : 6
-
-Seq 28
-Taille : 207
-Position(s) : 
-9 
-64 
-	Substitution du nucléotide numéro 1 (a) en t
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en a
-100 
-	Substitution du nucléotide numéro 1 (a) en g
-	Substitution du nucléotide numéro 2 (t) en g
-	Substitution du nucléotide numéro 4 (c) en a
-128 
-134 
-151 
-198 
+143 
+173 
+213 
 Occurence(s) : 7
 
-Seq 29
-Taille : 250
+Seq 11
+Taille : 208
 Position(s) : 
-31 
-	Substitution du nucléotide numéro 3 (g) en a
-	Substitution du nucléotide numéro 4 (c) en a
-41 
-	Substitution du nucléotide numéro 2 (t) en a
-	Substitution du nucléotide numéro 4 (c) en g
-47 
-	Substitution du nucléotide numéro 4 (c) en t
-55 
-65 
-111 
-169 
-185 
-	Substitution du nucléotide numéro 1 (a) en g
-199 
-232 
-Occurence(s) : 10
-
-Seq 30
-Taille : 196
-Position(s) : 
-19 
+22 
+	Substitution du nucléotide numéro 2 (t) en g
+	Substitution du nucléotide numéro 7 (g) en t
+115 
+131 
+164 
 	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 6 (t) en a
+Occurence(s) : 4
+
+Seq 12
+Taille : 60
+Position(s) : 
+10 
+28 
+Occurence(s) : 2
+
+Seq 13
+Taille : 233
+Position(s) : 
+56 
+123 
+	Substitution du nucléotide numéro 1 (a) en g
+	Substitution du nucléotide numéro 4 (c) en g
+Occurence(s) : 2
+
+Seq 14
+Taille : 130
+Position(s) : 
+58 
+	Substitution du nucléotide numéro 2 (t) en a
+	Substitution du nucléotide numéro 8 (c) en g
+Occurence(s) : 1
+
+Seq 15
+Taille : 139
+Position(s) : 
+3 
+	Substitution du nucléotide numéro 2 (t) en a
+	Substitution du nucléotide numéro 7 (g) en t
+73 
+	Substitution du nucléotide numéro 4 (c) en a
+	Substitution du nucléotide numéro 5 (a) en t
+121 
+Occurence(s) : 3
+
+Seq 16
+Taille : 150
+Position(s) : 
+13 
+108 
+124 
+	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 3 (g) en t
+Occurence(s) : 3
+
+Seq 17
+Taille : 143
+Position(s) : 
+6 
+	Substitution du nucléotide numéro 1 (a) en g
+	Substitution du nucléotide numéro 2 (t) en g
+40 
+65 
+	Substitution du nucléotide numéro 1 (a) en g
+	Substitution du nucléotide numéro 5 (a) en g
+109 
+	Substitution du nucléotide numéro 3 (g) en a
+	Substitution du nucléotide numéro 4 (c) en t
+126 
+Occurence(s) : 5
+
+Seq 18
+Taille : 172
+Position(s) : 
+5 
+	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 4 (c) en a
+33 
+50 
+	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 5 (a) en t
+94 
+145 
+	Substitution du nucléotide numéro 6 (t) en a
+	Substitution du nucléotide numéro 8 (c) en a
+Occurence(s) : 5
+
+Seq 19
+Taille : 137
+Position(s) : 
+48 
+Occurence(s) : 1
+
+Seq 20
+Taille : 66
+Position(s) : 
+14 
+Occurence(s) : 1
+
+Seq 21
+Taille : 121
+Position(s) : 
+9 
+	Substitution du nucléotide numéro 4 (c) en a
+	Substitution du nucléotide numéro 6 (t) en a
+25 
+Occurence(s) : 2
+
+Seq 22
+Taille : 63
+Position(s) : 
+42 
+	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 2 (t) en g
+Occurence(s) : 1
+
+Seq 23
+Taille : 32
+Position(s) : 
+1 
+Occurence(s) : 1
+
+Seq 24
+Taille : 62
+Position(s) : 
+Occurence(s) : 0
+
+Seq 25
+Taille : 164
+Position(s) : 
+8 
+102 
+	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 4 (c) en t
+Occurence(s) : 2
+
+Seq 26
+Taille : 103
+Position(s) : 
+6 
+	Substitution du nucléotide numéro 3 (g) en a
+	Substitution du nucléotide numéro 4 (c) en g
+22 
 	Substitution du nucléotide numéro 2 (t) en a
 	Substitution du nucléotide numéro 3 (g) en t
-91 
-130 
-141 
-186 
-Occurence(s) : 5
+68 
+Occurence(s) : 3
+
+Seq 27
+Taille : 171
+Position(s) : 
+84 
+	Substitution du nucléotide numéro 1 (a) en t
+	Substitution du nucléotide numéro 2 (t) en g
+122 
+	Substitution du nucléotide numéro 1 (a) en g
+	Substitution du nucléotide numéro 4 (c) en a
+Occurence(s) : 2
+
+Seq 28
+Taille : 192
+Position(s) : 
+6 
+23 
+	Substitution du nucléotide numéro 1 (a) en g
+	Substitution du nucléotide numéro 4 (c) en t
+53 
+92 
+	Substitution du nucléotide numéro 4 (c) en a
+	Substitution du nucléotide numéro 8 (c) en t
+Occurence(s) : 4
+
+Seq 29
+Taille : 157
+Position(s) : 
+51 
+	Substitution du nucléotide numéro 3 (g) en t
+	Substitution du nucléotide numéro 8 (c) en t
+Occurence(s) : 1
+
+Seq 30
+Taille : 115
+Position(s) : 
+32 
+58 
+Occurence(s) : 2
 

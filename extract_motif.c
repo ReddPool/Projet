@@ -4,30 +4,8 @@
 #include <string.h>
 #include <ctype.h>
 
-int nombreSequences(FILE* nomFile)
-{
-	int c;
-	int nSeq = 0;
-	int c2 = '\0';
+#include "fonction_gene_seq.h"
 
-	while((c=fgetc(nomFile)) != EOF)
-	{
-		if(c=='>')
-			nSeq++;
-	}
-
-	return nSeq;
-}
-
-//********************************************
-
-void LireChaine(char chaine[], int size) //Permet de lire une chaine de caractère rentrée par l'utilisateur
-{
-	fgets(chaine,size,stdin);
-	chaine[strlen(chaine)-1] = '\0';
-}
-
-//*********************************************
 
 int main(int argc, char const *argv[])
 {
