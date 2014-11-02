@@ -22,52 +22,6 @@ char genBases() //Génération aléatoire de bases
 
 //***********************************************************************
 
-void LireChaine(char chaine[], int size) //Permet de lire une chaine de caractère rentrée par l'utilisateur
-{
-	fgets(chaine,size,stdin);
-	chaine[strlen(chaine)-1] = '\0';
-}
-
-//***************************************************
-
-int LireNombreEntier() //Permet de lire un nombre entier
-{
-	char chaine[64];
-	fgets(chaine,64,stdin);
-
-	return atoi(chaine);
-}
-
-//***********************************************************************
-
-int chanceMotif() //Pourcentage d'apparition du motif dans la séquence
-{
-	int Random= rand() % 100;
-	if (Random>2) 
-	{
-		return 0;
-	}
-	else
-	{
-		return 1;
-	}
-}
-
-int chanceSubst() //Pourcentage de chance de substitution
-{
-	int Random= rand() % 100;
-	if (Random>50) 
-	{
-		return 0;
-	}
-	else
-	{
-		return 1;
-	}
-}
-
-//************************************************
-
 char* substMotif(char motif[], int nomSubs, FILE* Seqfile)
 {
 	char motif2[strlen(motif)];
@@ -115,7 +69,7 @@ void genSeq(int tailleSeq, int tailleMotif, int subst, char motif[], FILE* Seqfi
 			int j = chanceMotif(); //Chance d'apparition du motif
 			if(j && ((tailleSeq-i) > tailleMotif)) // Si le motif doit apparaitre et qu'il reste assez de nucléotides dans la séquence pour l'apparition du motif
 			{
-				int substmotif = 0;
+				//int substmotif = 0;
 				int k = chanceSubst();
 				pos=i+1;
 				
