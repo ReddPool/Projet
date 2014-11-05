@@ -1,7 +1,3 @@
-int nombreSequences(FILE* nomFile);
-
-//***********************************
-
 typedef struct listeSeq
 {
 	int id;

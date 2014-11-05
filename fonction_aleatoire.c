@@ -8,7 +8,7 @@
 
 int chanceMotif() //Pourcentage d'apparition du motif dans la séquence
 {
-	int Random= rand() % 100;
+	int Random= rand() % 100+1;
 	if (Random>2) 
 	{
 		return 0;
@@ -22,7 +22,7 @@ int chanceMotif() //Pourcentage d'apparition du motif dans la séquence
 int chanceSubst() //Pourcentage de chance de substitution
 {
 	int Random= rand() % 100;
-	if (Random>50) 
+	if (Random>10) 
 	{
 		return 0;
 	}

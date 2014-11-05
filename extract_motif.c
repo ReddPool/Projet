@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "fonction_gene_seq.h"
+#include "fonction_lecture.h"
 
 
 int main(int argc, char const *argv[])

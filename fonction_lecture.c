@@ -24,3 +24,47 @@ int LireNombreEntier() //Permet de lire un nombre entier
 }
 
 //***********************************************************************
+
+int nombreSequences(FILE* nomFile)
+{
+	int c;
+	int nSeq = 0;
+	//int c2 = '\0';
+
+	while((c=fgetc(nomFile)) != EOF)
+	{
+		if(c=='>')
+			nSeq++;
+	}
+
+	return nSeq;
+}
+
+//********************************************
+
+void ecritureFasta(char* nom, char** sequences, int nombreSequences)
+{
+	int i;
+	char fastaname[20];
+
+	sprintf(fastaname,"%s.fasta",nom);
+	FILE* Fastafile = NULL;
+	Fastafile = fopen(fastaname,"w");
+
+	if (Fastafile != NULL)
+	{
+		for(i=0; i<nombreSequences; i++)
+		{
+			fprintf(Fastafile, ">seq%i\n%s\n",i+1,sequences[i] );
+		}
+	}
+	else
+	{
+		printf("Impossible d'ouvrir le fichier %s\n",fastaname );
+	}
+	fclose(Fastafile);
+}
+
+//**************************
+
+//void calculPSSM(Motifs* tete)

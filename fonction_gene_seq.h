@@ -1,4 +1,28 @@
-#define BUFFERMAX 50
+typedef struct ListeSeq
+{
+	int _pos;
+	int _nbSubst;
+	char* _Motif_final;
+	struct ListeSeq* next;
+}ListeSeq;
+
+typedef ListeSeq* PtrListeSeq;
+
+typedef struct Motifs{
+	char* _motif;
+	struct ListeSeq* _listeSeq;
+}Motifs;
+
+typedef Motifs* PtrMotifs;
+
+typedef struct InfoSubst
+{
+	char* _motif;
+	int _nbSub;
+	struct InfoSubst* next;
+}InfoSubst;
+
+//******************************
 
 char genBases(); //Génération aléatoire de bases
 
@@ -20,10 +44,13 @@ int chanceSubst(); //Pourcentage de chance de substitution
 
 //***********************
 
-char* substMotif(char motif[], int nomSubs, FILE* Seqfile); //Substitution dans le motif
+InfoSubst* substMotif(char motif[], int nomSubs, FILE* Seqfile); //Substitution dans le motif
 
 //***********************
 
-void genSeq(int tailleSeq, int tailleMotif, int subst, char motif[], FILE* Seqfile, FILE* Fastafile); //Génération de la séquence et des fichiers
+char* genSeq(int tailleSeq, int tailleMotif, int subst, char motif[], FILE* Seqfile); //Génération de la séquence et des fichiers
 
+//***********************
+
+void printFasta(char** tabSeq ,FILE* Fastafile, int i);
 
