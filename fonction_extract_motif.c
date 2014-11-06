@@ -4,5 +4,4 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "fonction_extract_motif.h";
-
+#include "fonction_extract_motif.h"

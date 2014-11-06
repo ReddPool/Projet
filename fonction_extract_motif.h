@@ -1,3 +1,6 @@
+#ifndef LISTESEQ
+#define LISTESEQ
+
 typedef struct listeSeq
 {
 	int id;
@@ -6,4 +9,6 @@ typedef struct listeSeq
 
 }listeSeq;
 
-typedef liste_seq ptrListeSeq;
+typedef listeSeq* ptrListeSeq;
+
+#endif /* end of include guard: LISTESEQ */

@@ -1,3 +1,6 @@
+#ifndef FONCTIONGENESEQ
+#define FONCTIONGENESEQ
+
 typedef struct ListeSeq
 {
 	int _pos;
@@ -44,13 +47,18 @@ int chanceSubst(); //Pourcentage de chance de substitution
 
 //***********************
 
-InfoSubst* substMotif(char motif[], int nomSubs, FILE* Seqfile); //Substitution dans le motif
+char* substMotif(char motif[], int nomSubs, FILE* Seqfile, float**** PSSM); //Substitution dans le motif
 
 //***********************
 
-char* genSeq(int tailleSeq, int tailleMotif, int subst, char motif[], FILE* Seqfile); //Génération de la séquence et des fichiers
+char* genSeq(int tailleSeq, int tailleMotif, int subst, char* motif, FILE* Seqfile, float*** PSSM); //Génération de la séquence et des fichiers
 
 //***********************
 
 void printFasta(char** tabSeq ,FILE* Fastafile, int i);
 
+//***********************
+
+void calculPSSM(float*** PSSM, char nuc, int i);
+
+#endif /* end of include guard: FONCTIONGENESEQ */
