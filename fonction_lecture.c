@@ -53,9 +53,10 @@ void ecritureFasta(char* nom, char** sequences, int nombreSequences)
 
 	if (Fastafile != NULL)
 	{
-		for(i=0; i<nombreSequences; i++)
+		for(i = 0; i < nombreSequences; i++)
 		{
-			fprintf(Fastafile, ">seq%i\n%s\n",i+1,sequences[i] );
+			char* s = sequences[i];
+			fprintf(Fastafile, ">seq%i\n%s\n", i+1, s);
 		}
 	}
 	else

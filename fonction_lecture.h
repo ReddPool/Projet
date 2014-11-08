@@ -13,6 +13,7 @@ int nombreSequences(FILE* nomFile);
 
 //********************************
 
+
 void ecritureFasta(char* nom, char** sequences, int nombreSequences);
 
 #endif /* end of include guard: FONCTIONLECTURE */

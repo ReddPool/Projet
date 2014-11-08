@@ -14,11 +14,12 @@ TARGET  = $(NAME)
 TARGETC = gene_seq.c
 PRESOURCES=$(wildcard *.c)
 SOURCES := $(filter-out $(TARGETC),$(PRESOURCES))
-OBJECTS=$(patsubst /%.c,%.o,$(SOURCES))
+OBJECTS=$(patsubst %.c,%.o,$(SOURCES))
 COMMON  =
 HEADERS = $(wildcard *.h)
 
 all: $(TARGET)
+
 
 $(TARGET): $(TARGETC) $(OBJECTS)
 	$(CC) $(FLAGS) $(CFLAGS) $(DEBUGFLAGS) $(TARGETC) $(OBJECTS) -o $(TARGET)
