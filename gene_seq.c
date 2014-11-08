@@ -37,6 +37,18 @@ int main(int argc, char const *argv[])
 	{
 		PSSM[hop] = 0.0;
 	}
+
+	/*Exemple d'allocation pour la PSSM :
+	#####################################
+
+	PSSM = (float**) calloc(tailleMotif, sizeof(float*));
+	for(size_t hop = 0; hop < tailleMotif; hop++)
+	{
+		PSSM[hop] = (float*) calloc(4, sizeof(float));
+	}
+
+	*/
+
 	//PSSM= *adr_PSSM;
 
 	// initialisation des colonnes de la PSSM
