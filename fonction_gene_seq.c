@@ -10,7 +10,7 @@
 
 char genBases() //Génération aléatoire de bases
 {
-	int Random= rand() % 3;
+	int Random= rand() % 4;
 	char c;
 	switch(Random)
 	{
@@ -24,7 +24,7 @@ char genBases() //Génération aléatoire de bases
 
 //***********************************************************************
 
-void calculPSSM(int*** PSSM, char nuc, int i)
+void calculPSSM(float** PSSM, char nuc, int i)
 {
 	//printf("%f\n", PSSM[i][0]);
 	switch (nuc)
@@ -33,12 +33,28 @@ void calculPSSM(int*** PSSM, char nuc, int i)
 		case 't' : PSSM[i][1]++; break;
 		case 'g' : PSSM[i][2]++; break;
 		case 'c' : PSSM[i][3]++; break;
+		default : printf("Probleme calculPSSM\n");
 	}
 }
 
 //***********************************************************************
 
-char* substMotif(char* motif, int nomSubs, FILE* Seqfile, int*** PSSM)
+void freqPSSM(float** PSSM, int nbMotifs, int tailleMotif)
+{
+	int i;
+	for ( i = 0; i < tailleMotif ; i++)
+		{
+			printf("%d\n", i);
+			PSSM[i][0] /= nbMotifs;
+			PSSM[i][1] /= nbMotifs;
+			PSSM[i][2] /= nbMotifs;
+			PSSM[i][3] /= nbMotifs;
+		}
+}
+
+//***********************************************************************
+
+char* substMotif(char* motif, int nomSubs, FILE* Seqfile, float** PSSM)
 {
 	int tailleMotif = strlen(motif);
 	char* motif2 = NULL;
@@ -46,7 +62,7 @@ char* substMotif(char* motif, int nomSubs, FILE* Seqfile, int*** PSSM)
 		exit(1);
 	}
 	strcpy(motif2, motif);
-	char subst = 0, nuc = 0;
+	char subst = '\0', nuc = '\0';
 	int i = 0;
 	int k = 0;
 
@@ -61,18 +77,10 @@ char* substMotif(char* motif, int nomSubs, FILE* Seqfile, int*** PSSM)
 			fprintf(Seqfile, "\n\tSubstitution du nucléotide numéro %i (%c) en %c", i+1, motif2[i], subst);
 			//printf("Substitution de %c en %c\n",motif2[i],subst[0] );
 			motif2[i] = subst;
-			//calculPSSM(&PSSM,subst,i);
-			switch (nuc)
-			{
-				case 'a': PSSM[tailleMotif * 0 + i]++; break;
-				case 't': PSSM[tailleMotif * 1 + i]++; break;
-				case 'g': PSSM[tailleMotif * 2 + i]++; break;
-				case 'c': PSSM[tailleMotif * 3 + i]++; break;
-				default: fprintf(stderr, "ERREUR\n"); break;
-			}
 			k++;
 			//printf("%s\n",motif2);
 		}
+		calculPSSM(PSSM,motif2[i],i);
 		i++;
 	}
 	//printf("motif 2 : %s\n",motif2);
@@ -85,7 +93,7 @@ char* substMotif(char* motif, int nomSubs, FILE* Seqfile, int*** PSSM)
 
 //************************************************************************
 
-char* genSeq(int tailleSeq, int tailleMotif, int subst, char* motif, FILE* Seqfile, int** PSSM)
+char* genSeq(int tailleSeq, int tailleMotif, int subst, char* motif, FILE* Seqfile, float** PSSM, int* nbMotifs)
 {
 	char* Seq = NULL;
 	if((Seq = (char*) calloc(tailleSeq + 1, sizeof(char))) == NULL){
@@ -100,7 +108,6 @@ char* genSeq(int tailleSeq, int tailleMotif, int subst, char* motif, FILE* Seqfi
 	//listeMotifs = (PtrMotifs)malloc(sizeof(Motifs));
 
 	//PtrListeSeq listeSeq = NULL;
-
 	fprintf(Seqfile, "Position(s) : ");
 
 	if (tailleMotif <= tailleSeq) //Si la taille du motif est inférieure à la taille de la séquence
@@ -113,12 +120,14 @@ char* genSeq(int tailleSeq, int tailleMotif, int subst, char* motif, FILE* Seqfi
 			{
 				//int substmotif = 0;
 				pos=i+1;
-
 				fprintf(Seqfile,"\n%i ",pos );
 				//if (chanceSubst()) // S'il y a une substitution et qu'on a pas encore atteint le nombre max de substitutions
 				//{
-					motif2 = substMotif(motif, subst, Seqfile, &PSSM);
+
+					motif2 = substMotif(motif, subst, Seqfile, PSSM);
+
 					strncat(Seq,motif2,tailleMotif);
+
 					//printf("%i\n",(int) strlen(motif2) );
 					//printf("%i\n",strlen(substMotif(motif,subst,Seqfile,PSSM)) );
 					//printf("#\n");
@@ -137,6 +146,8 @@ char* genSeq(int tailleSeq, int tailleMotif, int subst, char* motif, FILE* Seqfi
 					//printf("%s\n", motif );
 				}*/
 
+				*nbMotifs = 1 + *nbMotifs;
+
 			}
 			else
 			{
@@ -148,6 +159,7 @@ char* genSeq(int tailleSeq, int tailleMotif, int subst, char* motif, FILE* Seqfi
 		//fprintf(Fastafile,"%s\n",Seq );
 		fprintf(Seqfile, "\nOccurence(s) : %i\n\n", occ);
 		Seq[tailleSeq] = '\0';
+
 	}
 	else
 	{
